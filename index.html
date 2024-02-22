@@ -1,347 +1,175 @@
-<!DOCTYPE html>
-<html lang="fa-IR">
-<head>
-<!-- Meta tags -->
-	<meta charset="UTF-8">
-	<meta name="author" content="zimpley">
-	<meta http-equiv="Content-type" content="text/html;charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-	<meta name="google-site-verification" content="BeBQRYpOOMPG2G0mGrTV8wtMmdki-1-h6dklCKYgrFY" />
 
-<!-- Links -->
-	<link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="assest/css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="assest/css/style.css">
+<html>
+  <head>
+ 
+  <title>Scimago Journal &amp; Country Rank</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link rel="shortcut icon" href="favicon.ico" />
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
-<!-- Title -->
-	<title>زیم پلی</title>
+ <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css' />
+  <link href='./gridcss/grid.css' rel='stylesheet' type='text/css' />
+   <link href='./gridcss/sjr.css?20180709' rel='stylesheet' type='text/css' />
 
-<!-- No JAVA SCRIPT -->
-	<noscript>your mobile is older and can not open the java script pleas update your mobile our by new mobile 😂</noscript>
-</head>
-<body data-spy="scroll" data-target="#navbar" data-offset="30">
-<header class="header" id="header">
-	<nav class="nav container">
-	<a href="index.html" class="nav__logo">
-	<img src="pic/favicon.png" class="nav__logo-img">زیم پلی</a>
+<script src="./js/raceme.min.js"></script>
+  <script src="./js/papaparse.min.js"></script>
+  
+  <script src="./js/Dataset.min.js"></script>
+  <script src="./js/Axis.min.js"></script>
+  <script src="./js/Elements.min.js"></script>
+  <script src="./js/Frame.min.js"></script>
+  <script src="./js/Properties.min.js"></script>
+  <script src="./js/View.min.js"></script>
+  <script src="./js/Utils.min.js"></script>
+  <script src="./js/Player.min.js"></script>
+  <script src="./js/Legend.min.js"></script>
+  <script src="./js/tooltip.min.js"></script>
+  <script src="./js/cola.min.js"></script>
 
-	<div class="nav__menu" id="nav-menu">
-	<ul class="nav__list">
-	<li class="nav__item"><a href="#home" class="nav__link active-link">خانه</a></li>
 
-	<li class="nav__item"><a href="#about" class="nav__link">درباره ی ما</a></li>
+ 
+ <script src="./gridcss/grid.js"></script>
+ <script src="./js/mainmenu.js"></script>
 
-	<li class="nav__item"><a href="#trick" class="nav__link">کالا ها</a></li>
+<link href='./multisitebar/multisite.css' rel='stylesheet' type='text/css' />
 
-	<li class="nav__item"><a href="#new" class="nav__link">جدید</a></li>
 
-	<a href="hami.ir" class="button button--ghost">تهیه اشتراک</a></ul>
+  </head>
+  <body>
 
-	<div class="nav__close" id="nav-close"><i class='bx bx-x'></i></div>
+<!-- cookieconsent  -->
+<!--<script src="js/countries_cookie.js"></script>
+<script src="js/cookieconsent.js?v=6"></script> **** -->
+<!-- To check analytics or marketing or both cookies -->
+<!--<script src="js/checkcookiescategories.js?v=3"></script>  **** -->
+<!-- end cookie consent -->
 
-	<img src="pic/nav-img.png" class="nav__img">
+
+<aside class="multisitebar">
+	<div class="multisitebar_central">
+		<div class="siteslinks">
+			<a href="https://www.scimagojr.com" class="sjrlink currentsite"><img src="multisitebar/sjr.png" alt="SCImago Journal & Country Rank" /><span class="multisite_tooltip">SCImago Journal Country & Rank</span></a>
+			<a href="https://www.scimagoir.com" class="scimagoirlink"><img src="multisitebar/sir.png" alt="SCImago Institutions Rankings" /><span class="multisite_tooltip">SCImago Institutions Rankings</span></a>
+			<a href="https://www.scimagomedia.com" class="scimagomedialink"><img src="multisitebar/scimagomedia.png" alt="SCImago Media Rankings" /><span class="multisite_tooltip">SCImago Media Rankings</span></a>
+			<a href="https://www.scimagoiber.com" class="siriberlink"><img src="multisitebar/siriber.png" alt="SCImago Iber" /><span class="multisite_tooltip">SCImago Iber</span></a>
+			<a href="https://www.scimagorc.com" class="srcrlink"><img src="multisitebar/srcr.png" alt="SCImago Research Centers Ranking" /><span class="multisite_tooltip">SCImago Research Centers Ranking</span></a>
+			<a href="https://www.graphica.app" class="graphicalink"><img src="multisitebar/graphica.png" alt="SCImago Graphica" /><span class="multisite_tooltip">SCImago Graphica</span></a>
+			<a href="https://www.scimagoepi.com" class="epilink"><img src="multisitebar/epi.png" alt="Ediciones Profesionales de la Información " /><span class="multisite_tooltip">Ediciones Profesionales de la Informaci&oacute;n</span></a>
+		</div>
+		<div id="multisitebar_scimagolablink">
+			<a href="https://www.scimagolab.com"><img src="multisitebar/scimagolab_mobile.png" alt="SCImago Lab" class="multisitebar_scimagolablink_mobile" /><img class="multisitebar_scimagolablink_desktop" src="multisitebar/scimagolab.png" alt="SCImago Lab" /></a>
+		</div>
 	</div>
-
-	<div class="nav__toggle" id="nav-toggle">
-	<i class='bx bx-grid-alt'></i>
-	</div>
-</nav></header>
+</aside>
 
 
-
-<br><br><br><br><main class="main">
-<section class="home container" id="home">
-<div class="swiper home-swiper"><div class="swiper-wrapper">
-
-	<section class="swiper-slide">
-	<div class="home__content grid">
-		<div class="home__group">
-		<img src="pic/footer3-img.png" class="home__img">
-		<div class="home__indicator"></div>
-
-	<div class="home__details-img">
-		<h4 class="home__details-title">به ما بپیوندید</h4>
-		<span class="home__details-subtitle">aparat.com/zimpley</span>
-		<span class="home__details-subtitle">t.me/zimpley_github_io</span></div></div>
-
-	<div class="home__data">
-		<h3 class="home__subtitle">#1-3 خوش آمدید</h3>
-		<h1 class="home__title">درباره ی ما</h1>
-		<p class="home__description"> ما تمام سعی خود را میکنیم که تمامی محصولاتمان رایگان باشد و هست اما محصولاتی مانند بعضی از کالا های درون برنامه ای و بعضی از مود ها پولی است و شما میتوانید با دیدن 1 تبلیغ آن را به صورت رایگان دریافت کنید اگر این مقاله ی کوتاه را دوست داشتید آن را لایک کنید </p>
-
-	<div class="home__buttons">
-		<a href="#" class="button--link button--flex">💓</a>
-		<a href="#" class="button--link button--flex">💔<i class='bx bx-right-arrow-alt button__icon'></i></a>
-		</div></div></div></section>
-
-	<section class="swiper-slide">
-		<div class="home__content grid">
-		<div class="home__group">
-		<img src="pic/footer2-img.png" class="home__img">
-		<div class="home__indicator"></div>
-
-	<div class="home__details-img">
-		<h4 class="home__details-title">به ما بپیوندید</h4>
-		<span class="home__details-subtitle">aparat.com/zimpley</span>
-		<span class="home__details-subtitle">t.me/zimpley_github_io</span></div></div>
-
-	<div class="home__data">
-		<h3 class="home__subtitle">#2 top Best duo</h3>
-		<h1 class="home__title">BRING BACK <br> MY COTTON <br> CANDY</h1>
-		<p class="home__description">Adino steals cotton candy from his brother and eats them all in one bite, a hungry beast. Grahami can no longer contain his anger towards Adino.</p>
-
-	<div class="home__buttons">
-		<a href="#" class="button--link button--flex">💓</a>
-		<a href="#" class="button--link button--flex">💔<i class='bx bx-right-arrow-alt button__icon'></i></a>
-		</div></div></div></section>
-
-	<section class="swiper-slide">
-		<div class="home__content grid">
-		<div class="home__group">
-		<img src="pic/footer1-img.png" class="home__img">
-		<div class="home__indicator"></div>
-
-	<div class="home__details-img">
-		<h4 class="home__details-title">به ما بپیوندید</h4>
-		<span class="home__details-subtitle">aparat.com/zimpley</span>
-		<span class="home__details-subtitle">t.me/zimpley_github_io</span></div></div>
-
-	<div class="home__data">
-		<h3 class="home__subtitle">#3 Top Scariest Ghost</h3>
-		<h1 class="home__title">RESPAWN <br> THE SPOOKY <br> SKULL</h1>
-		<p class="home__description">In search for cute little puppy, Captain Sem has come back from his tragic death. With his hogwarts certified power he promise to be a hero for all of ghostkind.</p>
-
-	<div class="home__buttons">
-		<a href="#" class="button--link button--flex">💓</a>
-		<a href="#" class="button--link button--flex">💔<i class='bx bx-right-arrow-alt button__icon'></i></a>
-		</div></div></div></section>
-
-</div><div class="swiper-pagination"></div></div></section>
+<!-- <div class="related_sites"><span class="related_sites_text">also developed by scimago:</span> <a href="https://www.scimagoir.com"><img src="./img/siricon.png" alt="" />Scimago Institutions Rankings</a></div>  -->
+<div class='header_home'><a href=".\" title="home">
+<img id="logo" src="./img/logo.png" alt="SJR" />
+<div id="tag">Scimago Journal &amp; Country Rank</div>
+</a>
+<form id="searchbox" action="journalsearch.php" method="get">
+  <input type="text" name="q" value="Enter Journal Title, ISSN or Publisher Name" id="searchinput" onfocus="if(this.value == 'Enter Journal Title, ISSN or Publisher Name') { this.value = ''; }" onblur="if (this.value=='') {this.value='Enter Journal Title, ISSN or Publisher Name';}">
+  <input type="submit" id="searchbutton" value="" />
+  
+</form>
+</div>
 
 
 
-	<section class="section category">
-	<h2 class="section__title">Favorite Scare <br> Category</h2>
-
-	<div class="category__container container grid">
-	<div class="category__data">
-	<img src="pic/category1-img.png" class="category__img">
-	<h3 class="category__title">Ghosts</h3>
-	<p class="category__description">Choose the ghosts, the scariest there are.</p>
-	</div>
-
-	<div class="category__data">
-	<img src="pic/category2-img.png" class="category__img">
-	<h3 class="category__title">Pumpkins</h3>
-	<p class="category__description">You look at the scariest pumpkins there is.</p>
-	</div>
-
-	<div class="category__data">
-	<img src="pic/category3-img.png" class="category__img">
-	<h3 class="category__title">Witch Hat</h3>
-	<p class="category__description">Pick the most stylish witch hats out there.</p>
-	</div>
-	</div>
-	</section>
+	<div id='menu_boton' style='cursor: pointer;'><img src='./img/menu.png' alt='menu'> menu</div><div id='mainmenu' class='homemenu'><ul><li><a href='journalrank.php'>Journal Rankings</a></li><li><a href='countryrank.php'>Country Rankings</a></li><li><a href='viztools.php'>Viz Tools</a></li><li><a href='help.php'>Help</a></li><li><a href='aboutus.php'>About Us</a></li></div>  
+<script defer data-domain="scimagojr.com" src="https://plausible.scimago.es/js/script.js"></script>
 
 
 
-	<section class="section about" id="about">
-	<div class="about__container container grid">
-	<div class="about__data">
-	<h2 class="section__title about__title">About Halloween <br> Night</h2>
-	<p class="about__description">Night of all the saints, or all the dead, is celebrated on October 31 and it is a 
-		very fun international celebration, this celebration comes from ancient origins, and is already 
-		celebrated by everyone.
-	</p>
-	<a href="#" class="button">Know more</a>
-	</div>
 
-	<img src="pic/about-img.png" class="about__img">
-	</div>
-	</section>
+<div class="dashboard">
+  
+  
 
+ <div class="home_column">
+  <!--<div style="text-align: center;background-color: white;padding: 24px;box-shadow: 0px 2px 12px #00000005;">
+  <img src="https://www.scimagojr.com/banderas/ua.png" alt="Ukraine flag" style="border-radius: 2px;width: 28px;  box-shadow: 0px 1px 1px rgb(0 0 0 / 30%);margin-left: 12px;margin-right: 12px;vertical-align: sub;" />
+  New: <a href="https://www.scimagolab.com/scimago-rejects-the-war-in-ucraine/">SCImago Research Group statement on the war in Ukraine</a>
+  </div>-->
+  <div style="text-align: center;background-color: white;padding: 24px;box-shadow: 0px 2px 12px #00000005;">  
+  <a href="https://www.scimagolab.com/official-statement-of-scimago-lab/">Official Statement of SCImago Lab</a> 
+  </div>
 
+<h1>What is ScimagoJR for?</h1>
+  <div class="homeblock">
+    <img class='homeicon' src="img/journalicon.png" />
+    <h2>Journal Ranks</h2>
+    <p><a class="calllink" href="journalrank.php">Explore</a></p>
+  </div>
 
-	<section class="section trick" id="trick">
-	<h2 class="section__title">Trick Or Treat</h2>
+  <div class="homeblock">
+    <img class='homeicon' src="img/worldicon.png" />
+    <h2>Country Ranks</h2>
+    <p><a class="calllink" href="countryrank.php">Explore</a></p>
+  </div>
 
-	<div class="trick__container container grid">
-	<div class="trick__content">
-	<img src="pic/trick-treat1-img.png" class="trick__img">
-	<h3 class="trick__title">Toffee</h3>
-	<span class="trick__subtitle">Candy</span>
-	<span class="trick__price">$11.99</span>
-	<button class="button trick__button">
-		<i class='bx bx-cart-alt trick__icon'></i>
-	</button>
-	</div>
+  <div class="homeblock">
+    <img class='homeicon' src="img/vizicon.png" />
+    <h2>Viz Tools</h2>
+    <p><a class="calllink" href="viztools.php">Explore</a></p>
+  </div>
 
-	<div class="trick__content">
-	<img src="pic/trick-treat2-img.png" class="trick__img">
-	<h3 class="trick__title">Bone</h3>
-	<span class="trick__subtitle">Accessory</span>
-	<span class="trick__price">$8.99</span>
-	<button class="button trick__button">
-		<i class='bx bx-cart-alt trick__icon'></i>
-	</button>
-	</div>
+<h1>Latest projects</h1>
+<div class="homeblockX2">
+<h2>Scimago Research Centers Ranking MENA region</h2>
+<p>The ranking spans 391 research centers representing the 22 countries in the MENA region. It examines 16 indicators from 3 dimensions: Research, Innovation and Society. </p>
+<p><a class="calllink" href="https://scimagorc.com/">See Scimago Research Centers</a></p>
+</div>
+<div class="homeblock">
+<img src="img/screensrc.png" class='homescreenshot'/>
+</div>
 
-	<div class="trick__content">
-	<img src="pic/trick-treat3-img.png" class="trick__img">
-	<h3 class="trick__title">Scarecrow</h3>
-	<span class="trick__subtitle">Accessory</span>
-	<span class="trick__price">$15.99</span>
-	<button class="button trick__button">
-		<i class='bx bx-cart-alt trick__icon'></i>
-	</button>
-	</div>
+<!-- 
+<h1>Scimago on Media</h1>
 
-	<div class="trick__content">
-	<img src="pic/trick-treat4-img.png" class="trick__img">
-	<h3 class="trick__title">Candy Cane</h3>
-	<span class="trick__subtitle">Candy</span>
-	<span class="trick__price">$7.99</span>
-	<button class="button trick__button">
-		<i class='bx bx-cart-alt trick__icon'></i>
-	</button>
-	</div>
+            
 
-	<div class="trick__content">
-	<img src="pic/trick-treat5-img.png" class="trick__img">
-	<h3 class="trick__title">Pumpkin</h3>
-	<span class="trick__subtitle">Candy</span>
-	<span class="trick__price">$19.99</span>
-	<button class="button trick__button">
-		<i class='bx bx-cart-alt trick__icon'></i>
-	</button>
-	</div>
+  <div class="homeblock"><a class="calllink" href="http://www.scoop.it/t/scimagomedia/" target="_blank">More news</a></div>          
+-->
+ </div>
+  
 
-	<div class="trick__content">
-	<img src="pic/trick-treat6-img.png" class="trick__img">
-	<h3 class="trick__title">Ghost</h3>
-	<span class="trick__subtitle">Accessory</span>
-	<span class="trick__price">$17.99</span>
-	<button class="button trick__button">
-		<i class='bx bx-cart-alt trick__icon'></i>
-	</button>
-	</div>
-	</div>
-	</section>
+  
+  
+   
+  
+  
 
+ 
+ 
+  
+</div>
+ 
 
+<div class="foot">
+  <div class="colblock">
+    <a href="http://www.scimagolab.com" class="logofooter" >Developed by:<br /><img src="./img/logo_footer.png" alt="Scimago Lab" /></a>
+    <a href="http://www.scopus.com" class="logofooter" >Powered by:<br /><img src="./img/scopus.png" alt="Powered by scopus" /></a>
 
-	<section class="section discount">
-	<div class="discount__container container grid">
-	<div class="discount__data">
-	<h2 class="discount__title">50% Discount <br> On New Products</h2>
-	<a href="#" class="button">Go to new</a>
-	</div><img src="pic/glass.png" class="discount__img"></div>
-	</section>
+    
+    <p>Follow us on <a href="https://twitter.com/ScimagoJR">@ScimagoJR</a><br /><br /><a href="http://www.scimagolab.com">Scimago Lab</a>, Copyright 2007-2022. Data Source: <a href="http://www.scopus.com">Scopus&reg;</a></p>
+    <img src="./img/estmodusinrebus.png" alt="" id="tagline" title="Est modus in rebus (There is a proper measure in things). Horatio." alt="Est modus in rebus (There is a proper measure in things). Horatio."/>
 
+    <!--<p><a class="nav-link ccb__edit" href="#">Cookie settings</a></p>
+    <p><a href="https://www.scimagojr.com/cookie-policies.php">Cookie Policy</a></p>-->
+    <p><a href="https://www.scimagojr.com/legal-notice.php">Legal Notice</a></p>
+    <p><a href="https://www.scimagojr.com/privacy-policy.php">Privacy Policy</a></p>
+  </div>
 
+</div>
+  
 
-	<section class="section new" id="new">
-	<h2 class="section__title">New Arrivals</h2>
-	<div class="new__container container">
-	<div class="swiper new-swiper"><div class="swiper-wrapper">
-
-		<div class="new__content swiper-slide">
-		<div class="new__tag">New</div>
-		<img src="pic/new1-img.png" class="new__img">
-		<h3 class="new__title">Haunted House</h3>
-		<span class="new__subtitle">Accessory</span>
-		
-		<div class="new__prices">
-		<span class="new__price">$14.99</span>
-		<span class="new__discount">$29.99</span></div>
-	<button class="button new__button"><i class='bx bx-cart-alt new__icon'></i></button></div>
-
-		<div class="new__content swiper-slide">
-		<div class="new__tag">New</div>
-		<img src="pic/new2-img.png" class="new__img">
-		<h3 class="new__title">Halloween Candle</h3>
-		<span class="new__subtitle">Accessory</span>
-
-		<div class="new__prices">
-		<span class="new__price">$11.99</span>
-		<span class="new__discount">$21.99</span></div>
-	<button class="button new__button"><i class='bx bx-cart-alt new__icon'></i></button></div>
-
-		<div class="new__content swiper-slide">
-		<div class="new__tag">New</div>
-		<img src="pic/new3-img.png" class="new__img">
-		<h3 class="new__title">Witch Hat</h3>
-		<span class="new__subtitle">Accessory</span>
-
-		<div class="new__prices">
-		<span class="new__price">$4.99</span>
-		<span class="new__discount">$9.99</span></div>
-	<button class="button new__button"><i class='bx bx-cart-alt new__icon'></i></button></div>
-</div></div></div></section>
-
-
-
-	<section class="section newsletter">
-	<div class="newsletter__container container">
-	<h2 class="section__title">اخبار بیشتر</h2>
-	<p class="newsletter__description">ایمیلتون رو بزنید تا از آپدیت ها با خبر شید</p>
-	<form action="" class="newsletter__form">
-	<input type="text" placeholder="ایمیل خود را با @ وارد کنید" class="newsletter__input">
-	<button class="button">تیید</button>
-</form></div></section></main></center></div>
-
-
-
-	<footer class="footer section">
-	<div class="footer__container container grid">
-	<div class="footer__content">
-
-	<a href="#" class="footer__logo"><img src="pic/separ-google-play.png" class="footer__logo-img">گواهی سپر گوگل</a>
-
-	<p class="footer__description">با تشکر فراوان از گیت هاب<br>SSL جهت همکاری امنیت</p>
-	
-	<div class="footer__social">
-		<a href="https://aparat.com/zimpley" target="_blank" class="footer__social-link">
-		<i class='bx'>آپارات</i></a>
-		<a href="https://www.instagram.com/zimpley_github_io" target="_blank" class="footer__social-link">
-		<i class='bx'>اینستا</i></a>
-		<a href="https://t.me/zimpley_github_io" target="_blank" class="footer__social-link">
-		<i class='bx'>تلگرام</i></a></div></div>
-
-	<div class="footer__content">
-	<a href="#" class="footer__logo"><img src="pic/footer1-img.png" class="footer__logo-img">پر بازدید ترین لینک ها</a>
-	<ul class="footer__links">
-		<li><a href="#" class="footer__link">مود های جنگ های صلیبی</a></li><li>
-		<a href="#" class="footer__link">مود های جی تی ای</a></li><li>
-		<a href="#" class="footer__link">مود های ماینکرافت</a></li><li>
-		<a href="#" class="footer__link">مود های شهر صلیبی 1 اندروید</a></li></ul></div>
-
-	<div class="footer__content">
-	<a href="#" class="footer__logo"><img src="pic/footer2-img.png" class="footer__logo-img">اخبار بازی ها</a>
-	<ul class="footer__links">
-		<li><a href="#" class="footer__link">شروع پروژه شهر صلیبی 1</a></li><li>
-		<a href="#" class="footer__link">نسخه ی 1.5 جنگ های صلیبی 1</a></li><li>
-		<a href="#" class="footer__link">آپدیت جدید ماینکرافت خیلی خفن</a></li><li>
-		<a href="#" class="footer__link">بر سیستم ضعیف GTAV نصب</a></li></ul></div>
-
-	<div class="footer__content">
-	<a href="#" class="footer__logo"><img src="pic/footer3-img.png" class="footer__logo-img">تشکر از حامیان ما</a>
-	<ul class="footer__links">
-		<li><a href="#" class="footer__link">اکبر کریمی 130.000 تومان</a></li><li>
-		<a href="#" class="footer__link">احمد شاهی 92.000 تومان</a></li><li>
-		<a href="#" class="footer__link">کسی یافت نشد</a></li><li>
-		<a href="#" class="footer__link">کسی یافت نشد</a></li></ul></div></div>
-
-	<span class="footer__copy">&#169; copyright 2020-2023 <span1>ZIMPLEY</span1>.github.io | tanks for github about free host</span>
-
-	<img src="pic/footer3-img.png" class="footer__img-one">
-	<img src="pic/footer2-img.png" class="footer__img-two"></footer>
-
-	<a href="#" class="scrollup" id="scroll-up"><i class='bx bx-up-arrow-alt scrollup__icon'></i></a>
-
-<script src="assest/js/scrollreveal.min.js"></script>
-<script src="assest/js/swiper-bundle.min.js"></script>
-<script src="assest/js/main.js"></script>
-</body>
+  </body>
 </html>
